@@ -1,10 +1,16 @@
 package springStarter.carmanager.display;
 
+import org.springframework.context.annotation.Lazy;
 import org.springframework.stereotype.Component;
 import springStarter.carmanager.Car;
 
+@Lazy
 @Component
 public class CarFullDataDisplayer implements CarDisplayer{
+
+    public CarFullDataDisplayer(){
+        System.out.println("tworze displayera");
+    }
 
     public void displayCarData(Car car) {
         System.out.println("----------" + car.getModelName() + "----------");

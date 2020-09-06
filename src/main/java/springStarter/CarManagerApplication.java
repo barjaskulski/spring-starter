@@ -6,9 +6,10 @@ import springStarter.carmanager.CarService;
 
 public class CarManagerApplication {
     public static void main(String[] args) {
+        System.out.println("tworze application context");
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(CarManagerConfiguration.class);
 //        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("context.xml");
-//
+        System.out.println("Stworzylem application context");
 //        CarDatabase carDatabase = new FordDatabase();
 //        CarDisplayer carDisplayer = new CarFullDataDisplayer();
 

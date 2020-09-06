@@ -11,7 +11,7 @@ import springStarter.carmanager.display.CarDisplayer;
 import java.util.List;
 import java.util.stream.Collectors;
 
-@Lazy
+//@Lazy
 @Component
 public class CarService {
 
@@ -24,6 +24,7 @@ public class CarService {
     public CarService(CarDatabase carDatabase,@Qualifier("carFullDataDisplayer") CarDisplayer carDisplayer) {
         this.carDatabase = carDatabase;
         this.carDisplayer = carDisplayer;
+        System.out.println("tworze carservice");
     }
 
     public void displayCarsForSegment(CarSegment carSegment) {
